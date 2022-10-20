@@ -62,6 +62,10 @@ const Hero = () => {
         <img src={hero_image_back} alt="" className='hero-img-back' />
         <div className="calories-img">
           <img src={Calories} alt="" srcset="" />
+          <div>
+            <span>Calories burned</span>
+            <span>220 kcal</span>
+          </div>
         </div>
 
       </div>
