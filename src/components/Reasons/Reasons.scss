@@ -1,0 +1,83 @@
+.reasons {
+  padding: 0 2rem;
+  display: flex;
+  grid-template: 2rem;
+}
+
+.left-r {
+  flex: 1 1;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  >span {
+    font-weight: bold;
+    color: var(--orange);
+  }
+
+  >div {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .tick-list {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    >div {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+
+      gap: 1rem;
+    }
+  }
+
+  .brand-img {
+    display: flex;
+    gap: 1rem;
+
+    >img {
+      width: 2.5rem
+    }
+  }
+}
+
+.right-r {
+  flex: 1 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-template-rows: 1fr;
+
+  >img {
+    object-fit: cover;
+  }
+
+  >:nth-child(1) {
+    width: 12rem;
+    grid-row: 1/3;
+    height: 28rem;
+  }
+
+  >:nth-child(2) {
+    width: auto;
+    height: 16rem;
+    grid-column: 2/4;
+  }
+
+  >:nth-child(3) {
+    width: 14rem;
+    grid-column: 2/3;
+    grid-row: 2;
+  }
+
+  >:nth-child(4) {
+    width: 10rem;
+    grid-row: 2;
+    grid-column: 3/4;
+  }
+}
