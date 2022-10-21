@@ -35,9 +35,7 @@ function Testimonial() {
             }}
             src={leftArrow} alt="" />
           <img
-            onClick={() => {
-              selected === (testLength - 1) ? setSelected(0) : setSelected((prev) => prev + 1)
-            }}
+
             src={rightArrow} alt="" />
         </div>
       </div>
