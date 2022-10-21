@@ -7,13 +7,22 @@ import Heart from '../../assets/heart.png'
 import Calories from '../../assets/calories.png'
 import shero from '../../assets/shero_img.png'
 
+import { motion } from 'framer-motion'
+
 const Hero = () => {
+  const transition = { type: 'spring', duration: 3 }
   return (
     <div className='hero'>
       <div className='left-h'>
         <Header />
         <div className='slogan'>
-          <div></div>
+          <motion.div
+            initial={{ left: '166px' }}
+            whileInView={{ left: '8px' }}
+            transition={{ ...transition, type: 'tween' }}
+          >
+
+          </motion.div>
           <span>The best Fitness in the City</span>
         </div>
 
@@ -52,14 +61,19 @@ const Hero = () => {
       </div>
       <div className='right-h'>
         <button className='btn'>Join Now</button>
-        <div className="heart-rate">
+        <motion.div className="heart-rate"
+          initial={{ right: '-1rem' }}
+          whileInView={{ left: '5rem' }}
+          transition={{ ...transition, type: 'tween' }}
+        >
           <img src={Heart} alt="" />
           <span>Heart Rate</span>
           <span>116 bpm</span>
-        </div>
+        </motion.div>
 
         <img src={shero} alt="people" className='hero-img' />
-        <img src={hero_image_back} alt="" className='hero-img-back' />
+        <div className='blur blur-hero'></div>
+        {/* <img src={hero_image_back} alt="" className='hero-img-back' /> */}
         <div className="calories-img">
           <img src={Calories} alt="" srcset="" />
           <div>

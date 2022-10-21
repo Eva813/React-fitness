@@ -1,0 +1,22 @@
+.footer-section {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  >hr {
+    color: #fff;
+    width: 100%;
+  }
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+
+  >img {
+    width: 2rem;
+    cursor: pointer;
+  }
+}
