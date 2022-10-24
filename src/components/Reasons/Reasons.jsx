@@ -15,7 +15,7 @@ const Reasons = () => {
       <div className="left-r">
         <span>some reasons</span>
         <div><span className='stroke-text'>Why </span>
-          <span>choose us ? </span></div>
+          <span>choose  us ? </span></div>
 
         <div className="tick-list">
           <div>

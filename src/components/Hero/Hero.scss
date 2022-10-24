@@ -107,7 +107,7 @@
   background-color: var(--orange);
 
   >.btn {
-    color: #77f;
+    color: #393d42;
     position: absolute;
     right: 3rem;
     top: 2rem;
@@ -188,4 +188,86 @@
   height: 30rem;
   right: 36px;
   top: 49px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .blur-hero {
+    width: 13rem;
+  }
+
+  .slogan {
+    margin-top: 0;
+    font-size: small;
+    align-items: center;
+
+  }
+
+  .hero-text {
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+
+    >div:nth-of-type(3) {
+      font-size: small;
+      font-weight: 200;
+      text-align: center;
+      letter-spacing: 0.8px;
+    }
+
+    .hero-btns {
+      justify-content: center;
+    }
+  }
+
+  .figure {
+    >div {
+
+      >span:nth-of-type(1) {
+        font-size: large;
+      }
+
+      >span:nth-of-type(2) {
+        font-size: small;
+      }
+    }
+  }
+
+  .right-h {
+    position: relative;
+    background: none;
+
+    .heart-rate {
+      left: 1rem;
+      top: 2rem;
+      z-index: -2;
+    }
+
+    .calories-img {
+      position: relative;
+      top: 5rem;
+      left: 2rem;
+
+      >img {
+        width: 2rem;
+      }
+
+      >div> :nth-child(2) {
+        color: #fff;
+        font-size: 1rem;
+
+      }
+    }
+
+    .hero-img {
+      position: relative;
+      width: 15rem;
+      left: 7rem;
+      top: 10rem;
+      align-self: center;
+    }
+  }
 }

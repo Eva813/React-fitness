@@ -11,7 +11,7 @@ function Testimonial() {
   const transition = { type: 'spring', duration: 3 }
 
   return (
-    <div className='testimonial'>
+    <div className='testimonial' id='testimonial'>
       <div className="left-t">
         <span>WHAT THEY</span>
         <span className='stroke-text'>SAY ABOUT US</span>

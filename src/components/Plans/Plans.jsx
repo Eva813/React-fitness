@@ -5,7 +5,7 @@ import whiteTick from '../../assets/whiteTick.png'
 
 const Plans = () => {
   return (
-    <div className='plans-section'>
+    <div className='plans-section' id='plans'>
       <div className="blur p-blur-1"></div>
       <div className="blur p-blur-2"></div>
       <div className="plan-heading">

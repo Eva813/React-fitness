@@ -8,16 +8,19 @@ import Calories from '../../assets/calories.png'
 import shero from '../../assets/shero_img.png'
 
 import { motion } from 'framer-motion'
+import NumberCounter from 'number-counter'
 
 const Hero = () => {
   const transition = { type: 'spring', duration: 3 }
+  //設定當螢幕寬度改變
+  const mobileTran = window.innerWidth <= 768 ? true : false
   return (
-    <div className='hero'>
+    <div className='hero' id='home'>
       <div className='left-h'>
         <Header />
         <div className='slogan'>
           <motion.div
-            initial={{ left: '166px' }}
+            initial={{ left: mobileTran ? '136px' : '166px' }}
             whileInView={{ left: '8px' }}
             transition={{ ...transition, type: 'tween' }}
           >
@@ -41,7 +44,11 @@ const Hero = () => {
         {/* 製作圖像區塊 */}
         <div className="figure">
           <div>
-            <span>+ 100 </span>
+            <span>
+              <NumberCounter end={240} start={200}
+                delay='4' preFix="+" />
+
+            </span>
             <span>EXPERT COACHES</span></div>
           <div>
             <span>+ 908</span>
@@ -63,7 +70,7 @@ const Hero = () => {
         <button className='btn'>Join Now</button>
         <motion.div className="heart-rate"
           initial={{ right: '-1rem' }}
-          whileInView={{ left: '5rem' }}
+          whileInView={{ left: mobileTran ? '2rem' : '5rem' }}
           transition={{ ...transition, type: 'tween' }}
         >
           <img src={Heart} alt="" />

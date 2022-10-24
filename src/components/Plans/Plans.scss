@@ -97,3 +97,20 @@
   top: 15rem;
   right: 0rem;
 }
+
+@media screen and (max-width: 768px) {
+  .plan-heading {
+    flex-direction: column;
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .plans {
+    flex-direction: column;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+}
